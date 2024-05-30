@@ -9,12 +9,14 @@ import { Character } from '../../interfaces/character.interface';
 })
 export class AddCharacterComponent{
 
-  public characters: Character[] = [{
-    name: 'Goku',
-    power: 10000
-  }, {
-    name: 'Vegeta',
-    power: 9500,
-  }];
+  public character: Character = {
+    name: '',
+    power: 0
+  };
+
+  emitCharacter ():void {
+    console.log(this.character);
+  }
+
 
 }
